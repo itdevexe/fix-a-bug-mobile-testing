@@ -633,7 +633,14 @@ body {
   height: auto;
 }
 
+.dots-container12{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  padding-bottom: 10px;
+  width: 100%;
 
+}
 
 
 .imgcontainer21{
