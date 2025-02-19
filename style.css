@@ -956,6 +956,14 @@ body {
 
 
 
+
+
+
+
+
+
+
+
 /* newsection */
 
 .newsection{
@@ -1032,6 +1040,17 @@ body {
   border: 3px solid #e9def5;
   border-radius: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1337,6 +1356,7 @@ text-align: left;
   padding-left: 30px;
   padding-right: 20px;
   font-size: 14px;
+  /* padding-top: 3px; */
 
   * {
     /* padding: 0 1em 1em; */
@@ -1360,13 +1380,14 @@ text-align: left;
 
 .accordion input:checked~.accordion__header:after {
   transform: rotate(270deg) !important;
-  background-color: transparent;
+  background-color: black;
 }
 
 .accordion input:checked~.accordion__content {
   max-height: 1000px;
   /* Adjust based on content length */
 }
+
 
 
 
@@ -1688,7 +1709,9 @@ img {
 .content32 {
   display: flex;
   flex-direction: row;
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
   max-height: 72px;
   background-color: white;
   padding: 12px 10px 10px 15px;
@@ -1697,7 +1720,7 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .img50pximg {
@@ -2284,6 +2307,7 @@ img {
 
   .mainSliderWrapper::after{
     background: #ffffff00;
+    display: none;
   }
 
   .mainSliderWrapper{
@@ -2485,6 +2509,7 @@ img {
       background: #ece6ff;
       display: flex;
       flex-direction: column;
+      gap: 10px;
       /* align-items: center; */
       justify-content: flex-start;
       font-size: 18px;
@@ -2535,7 +2560,13 @@ img {
 }
 
 .content32{
-  width: 141px;
+  width: 100%;
+  max-width: 168px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0px 5px 0px  0px ;
+  height: 100%;
+  max-height: 72px;
 }
 
 
@@ -2543,7 +2574,7 @@ img {
   display: grid;
   width: auto !important;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 100px);
+  grid-template-rows: repeat(8, 100px);
 }
 
 .wide-height2{
@@ -2763,9 +2794,7 @@ body {
   .imagegrid-mobile{
     border: none;
   }
-  .content32{
-    width: auto;
-  }
+
 
   .img50pximg{
     padding: 5px;  
@@ -2808,6 +2837,28 @@ body {
 
 
   }
+  .card{
+    padding: 16px;
+  }
+  .card:hover .dispflex{
+    display: flex !important;
+    padding: 0px;
+  }
+
+  .card .image img{
+
+    width: 100%;
+    max-width: 120px;
+
+  }
+  .headingp{
+    font-size: 12px !important;
+  }
+
+  .card:hover .image img{
+    width: 100% !important;
+    max-width: 30px !important;
+  }
 
   .gridmask{
     /* padding: 20px; */
@@ -2823,12 +2874,6 @@ body {
     justify-items: center;
     flex: 2;
   }
-
-  /* .accordion__content{
-    padding-top: 5px;
-    padding-bottom: 5px;
-  } */
-
   .form-input{
     width: 100%;
   }
@@ -2846,6 +2891,7 @@ body {
   .cus-slide-mobile img {
     width: 100px;
   }
+
 
   .newcontainer{
     padding: 16px;
